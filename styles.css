@@ -1,0 +1,116 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, rgba(224, 247, 250, 0.7), rgba(255, 255, 255, 0.7)), 
+                url('motoo.jpg');
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.card {
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px; /* Puedes ajustar el ancho máximo según lo que necesites */
+    min-height: 70vh; /* Asegura que la tarjeta ocupe un buen porcentaje de la pantalla */
+    background: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Añade un poco de espacio interno */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.modern-btn {
+    font-size: 18px;
+    padding: 12px 24px;
+    border-radius: 50px;
+    transition: all 0.02s ease;
+}
+
+#confirmButton {
+    position: relative;
+    transition: transform 0.07s ease-in-out;
+}
+
+/* Estilo para el botón "No podré asistir" */
+.btn-outline-danger {
+    border: 2px solid red;
+    color: red;
+    background-color: transparent;
+}
+
+.btn-outline-danger:hover {
+    background-color: red;
+    color: white;
+}
+
+.wishlist {
+    margin-top: 20px;
+}
+
+.wishlist h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.list-group-item a {
+    text-decoration: none;
+    color: red; /* Color del enlace */
+    display: block; /* Hace que el enlace ocupe todo el espacio del elemento */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, transform 0.2s; /* Efecto de transición */
+}
+
+.list-group-item a:hover {
+    background-color: yellowgreen; /* Color de fondo al pasar el mouse */
+    color: white; /* Cambia el color del texto al pasar el mouse */
+    transform: scale(1.05); /* Escala al hacer hover */
+}
+
+.list-group-item a:active {
+    transform: scale(0.95); /* Efecto de reducción al hacer clic */
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin-top: 0; /* Elimina el margen superior en móviles */
+        min-height: auto; /* Ajusta la altura en móviles */
+    }
+
+    .wishlist {
+        margin-top: 10px; /* Ajusta el margen para móviles */
+    }
+
+    .list-group-item a {
+        padding: 8px; /* Reduce el padding en móviles */
+    }
+
+    
+}
+
+
